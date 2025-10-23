@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Azol!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- الصفحة الأولى -->
+    <div id="intro-page">
+        <div class="cake">
+            <div class="plate"></div>
+            <div class="layer layer-bottom"></div>
+            <div class="layer layer-middle"></div>
+            <div class="layer layer-top"></div>
+            <div class="icing"></div>
+            <div class="candle" id="candle">
+                <div class="flame"></div>
+            </div>
+        </div>
+        <div class="birthday-text">Happy Birthday Azol</div>
+        <div class="date">10/23</div>
+    </div>
+
+    <!-- الصفحة الرئيسية بعد النقر -->
+    <div id="main-page" class="hidden">
+        <!-- قسم الرسالة -->
+        <section class="message-section">
+            <div class="envelope" onclick="toggleLetter()">
+                <div class="envelope-front">🖋️ اضغط لفتح الرسالة</div>
+                <div class="letter">
+                    <div class="letter-content">
+                        <h3>إلى حبيبتي</h3>
+                        <div class="poem">
+                            <p>ميلادُكِ فلكٌ يحدثُ مرّةً،</p>
+                            <p>وفيه خُلقتِ أجملَ امرأةٍ،</p>
+                            <p>ميلادُكِ يومٌ، وبعينَيَّ سنةٌ،</p>
+                            <p>وما غيرُكِ في يومِ ميلادِكِ حسنةٌ.</p>
+                            <br>
+                            <p>هنيئًا لكِ العيدُ الذي أنتِ عيدُه،</p>
+                            <p>وأنتِ من فيضِ البهاءِ تزيدُه،</p>
+                            <p>وإنّي إذا أهدى لكِ غيري وردةً،</p>
+                            <p>سأهديكِ قلبًا، أنتِ فيهِ وريدُه.</p>
+                        </div>
+                        <div class="signature">~من الموقر حسن الى جلالتها~</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- معرض الصور -->
+        <section class="gallery-section">
+            <h2>ذكرياتنا الجميلة</h2>
+            <div class="gallery">
+                <div class="photo-frame">
+                    <img src="images/photo1.jpg" alt="صورة 1" onerror="this.src='https://via.placeholder.com/300x400/ff9bc9/ffffff?text=صورة+1'">
+                </div>
+                <div class="photo-frame">
+                    <img src="images/photo2.jpg" alt="صورة 2" onerror="this.src='https://via.placeholder.com/300x400/ff7eb6/ffffff?text=صورة+2'">
+                </div>
+                <div class="photo-frame">
+                    <img src="images/photo3.jpg" alt="صورة 3" onerror="this.src='https://via.placeholder.com/300x400/ff5fa3/ffffff?text=صورة+3'">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- مشغل الموسيقى -->
+    <audio id="birthday-song" loop>
+        <source src="music/romantic-piano.mp3" type="audio/mpeg">
+        <!-- إذا لم تعمل الموسيقى، سنستخدم رابط بديل -->
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
